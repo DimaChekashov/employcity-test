@@ -10,17 +10,19 @@
 
 		<header class="header">
 			<div class="container">
-				<a href="/" class="logo">
-					<img src="./images/logo.png" alt="logo">
-				</a>
-				<nav class="nav">
-					<ul>
-						<li><a href="#" class="nav__link">Бизнес</a></li>
-						<li><a href="#" class="nav__link">О нас</a></li>
-						<li><a href="#" class="nav__link">Цены</a></li>
-						<li><a href="#" class="nav__link">Оформить заказ</a></li>
-					</ul>
-				</nav>
+				<div class="header__row">
+					<a href="/" class="logo">
+						<img src="./images/logo.png" alt="logo">
+					</a>
+					<nav class="nav">
+						<ul>
+							<li><a href="#" class="nav__link">Бизнес</a></li>
+							<li><a href="#" class="nav__link">О нас</a></li>
+							<li><a href="#" class="nav__link">Цены</a></li>
+							<li><a href="#" class="nav__link">Оформить заказ</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 
@@ -74,7 +76,14 @@
 						<div class="order__advantage-text">Excepteur sint occaecat cupidatat non proident</div>
 					</div>
 				</div>
-				
+				<form action="order">
+					<div class="select"></div>
+					<input type="text" class="input" placeholder="Ваш e-mail">
+					<input type="text" class="input" placeholder="Ваше имя">
+					<div class="range"></div>
+					<button type="button" class="btn">Прикрепить файл</button>
+					<button type="button" class="btn btn_primary">Отправить</button>
+				</form>
 			</div>
 		</section>
 

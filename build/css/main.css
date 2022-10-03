@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +6,66 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #444444;
-  max-width: 1300px;
+  font-family: "Lato", sans-serif;
 }
+
+.container {
+  max-width: 1200px;
+  padding: 0 19px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding: 33.5px 0 31.5px;
+  background: rgba(16, 16, 29, 0.9);
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+}
+.logo img {
+  max-width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 60px;
+}
+.nav__link {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.nav__link:hover {
+  color: #43ABF0;
+}
+
+/* / header */
+/* greeting */
+.greeting {
+  background: url("../images/greeting-bg.jpg") no-repeat center center/cover;
+}
+
+/* / greeting */
+/* order */
+/* / order */
+/* footer */
+/* / footer */
