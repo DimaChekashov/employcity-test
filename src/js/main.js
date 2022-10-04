@@ -1,4 +1,5 @@
 const selected = document.querySelector(".selected");
+const selectedText = document.querySelector(".selected span");
 const optionsContainer = document.querySelector(".options-container");
 
 const optionsList = document.querySelectorAll(".option");
@@ -9,7 +10,7 @@ selected.addEventListener("click", () => {
 
 optionsList.forEach((o) => {
     o.addEventListener("click", () => {
-        selected.innerHTML = o.querySelector("label").innerHTML;
+        selectedText.innerHTML = o.querySelector("label").innerHTML;
         optionsContainer.classList.remove("active");
     });
 });
