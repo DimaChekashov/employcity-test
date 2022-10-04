@@ -46,6 +46,33 @@ body {
     }
 }
 
+.input {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    padding: 12px 10px;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+    &:focus {
+        outline: none;
+        background: rgba(255, 255, 255, 1);
+    }
+    &::placeholder {
+        color: #272733;
+    }
+    &:hover {
+        background: rgba(255, 255, 255, 1);
+    }
+}
+
+.range {
+
+}
+
 /* header */
 
 .header {
@@ -211,6 +238,19 @@ body {
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
+        }
+    }
+    &__form {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        &-col {
+            &.col-2 {
+                grid-column: span 2;
+            }
+            &.col-3 {
+                grid-column: span 3;
+            }
         }
     }
 }

@@ -76,13 +76,25 @@
 						<div class="order__advantage-text">Excepteur sint occaecat cupidatat non proident</div>
 					</div>
 				</div>
-				<form action="order">
-					<div class="select"></div>
-					<input type="text" class="input" placeholder="Ваш e-mail">
-					<input type="text" class="input" placeholder="Ваше имя">
-					<div class="range"></div>
-					<button type="button" class="btn">Прикрепить файл</button>
-					<button type="button" class="btn primary">Отправить</button>
+				<form action="order" class="order__form">
+					<div class="order__form-col">
+						<div class="select"></div>
+					</div>
+					<div class="order__form-col">
+						<input type="text" class="input" placeholder="Ваш e-mail" name="email">
+					</div>
+					<div class="order__form-col">
+						<input type="text" class="input" placeholder="Ваше имя" name="name">
+					</div>
+					<div class="order__form-col col-2">
+						<div class="range"></div>
+					</div>
+					<div class="order__form-col">
+						<button type="button" class="btn">Прикрепить файл</button>
+					</div>
+					<div class="order__form-col col-3">
+						<button type="button" class="btn primary">Отправить</button>
+					</div>
 				</form>
 			</div>
 		</section>

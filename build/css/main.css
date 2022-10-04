@@ -45,6 +45,29 @@ body {
   background-color: #eaeaea;
 }
 
+.input {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  padding: 12px 10px;
+  width: 100%;
+  transition: background 0.3s ease-in-out;
+}
+.input:focus {
+  outline: none;
+  background: rgb(255, 255, 255);
+}
+.input::placeholder {
+  color: #272733;
+}
+.input:hover {
+  background: rgb(255, 255, 255);
+}
+
 /* header */
 .header {
   position: fixed;
@@ -202,6 +225,17 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+}
+.order__form {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.order__form-col.col-2 {
+  grid-column: span 2;
+}
+.order__form-col.col-3 {
+  grid-column: span 3;
 }
 
 /* / order */
