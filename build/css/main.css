@@ -196,10 +196,7 @@ body {
   display: block;
   width: 830px;
   height: 6px;
-  background-image: linear-gradient(to right, rgb(255, 255, 255) 33%, rgb(238, 236, 236) 0%);
-  background-position: bottom;
-  background-size: 3px 1px;
-  background-repeat: repeat-x;
+  background: url("../images/dashed-line.png") no-repeat center center;
   position: absolute;
   z-index: -1;
   top: 47px;
@@ -236,6 +233,22 @@ body {
 }
 .order__form-col.col-3 {
   grid-column: span 3;
+}
+.order__form-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.order__form-btn img {
+  margin-right: 10px;
+}
+.order__form-send {
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+  display: block;
 }
 
 /* / order */
@@ -299,3 +312,128 @@ body {
 }
 
 /* / footer */
+/* select */
+.select-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-box .options-container {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  color: #272733;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+  order: 1;
+}
+
+.selected {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  color: #272733;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  order: 0;
+}
+
+.selected-icon {
+  position: absolute;
+  right: 11px;
+  top: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  transition: transform 0.4s;
+}
+.selected-icon svg {
+  fill: #000000;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.select-box .options-container.active + .selected .selected-icon {
+  transform: rotate(-180deg);
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected {
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+.select-box .option:hover {
+  background: #414b57;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .option .radio {
+  display: none;
+}
+
+/* / select */
+/* range */
+.slidecontainer {
+  width: 100%;
+  /* Width of the outside container */
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/* / range */

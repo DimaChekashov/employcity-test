@@ -78,7 +78,63 @@
 				</div>
 				<form action="order" class="order__form">
 					<div class="order__form-col">
-						<div class="select"></div>
+						<div class="select-box">
+							<div class="options-container">
+								<div class="option">
+									<input type="radio" class="radio" id="sed-ut" name="category" />
+									<label for="sed-ut">Sed ut perspiciatis</label>
+								</div>
+						
+								<div class="option">
+									<input type="radio" class="radio" id="nemo" name="category" />
+									<label for="nemo">Nemo enim ipsam</label>
+								</div>
+						
+								<div class="option">
+									<input type="radio" class="radio" id="et-harum" name="category" />
+									<label for="et-harum">Et harum quidem</label>
+								</div>
+						
+								<div class="option">
+									<input type="radio" class="radio" id="temporibus" name="category" />
+									<label for="temporibus">Temporibus autem</label>
+								</div>
+						
+								<div class="option">
+									<input type="radio" class="radio" id="itaque" name="category" />
+									<label for="itaque">Itaque earum rerum</label>
+								</div>
+						
+								<div class="option">
+									<input type="radio" class="radio" id="option-variant-2" name="category" />
+									<label for="option-variant-2">Option variant 2</label>
+								</div>
+						
+								<div class="option">
+									<input type="radio" class="radio" id="option-variant-3" name="category" />
+									<label for="option-variant-3">Option variant 3</label>
+								</div>
+						
+								<div class="option">
+									<input type="radio" class="radio" id="option-variant-4" name="category" />
+									<label for="option-variant-4">Option variant 4</label>
+								</div>
+						
+								<div class="option">
+									<input type="radio" class="radio" id="option-variant-5" name="category" />
+									<label for="option-variant-5">Option variant 5</label>
+								</div>
+							</div>
+						
+							<div class="selected">
+								Выберите тип системы
+								<div class="selected-icon">
+									<svg width="9" height="6" viewBox="0 0 9 6" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.93375 1.51079C8.93375 1.43936 8.89803 1.359 8.84446 1.30543L8.39803 0.859C8.34446 0.805429 8.2641 0.769714 8.19268 0.769714C8.12125 0.769714 8.04089 0.805429 7.98732 0.859L4.47839 4.36793L0.969462 0.859C0.91589 0.805429 0.835533 0.769714 0.764105 0.769714C0.683748 0.769714 0.612319 0.805429 0.558748 0.859L0.112319 1.30543C0.0587475 1.359 0.0230331 1.43936 0.0230331 1.51079C0.0230331 1.58221 0.0587475 1.66257 0.112319 1.71614L4.27303 5.87686C4.3266 5.93043 4.40696 5.96614 4.47839 5.96614C4.54982 5.96614 4.63018 5.93043 4.68375 5.87686L8.84446 1.71614C8.89803 1.66257 8.93375 1.58221 8.93375 1.51079Z"/>
+									</svg>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="order__form-col">
 						<input type="text" class="input" placeholder="Ваш e-mail" name="email">
@@ -87,13 +143,19 @@
 						<input type="text" class="input" placeholder="Ваше имя" name="name">
 					</div>
 					<div class="order__form-col col-2">
-						<div class="range"></div>
+						<div>Sed ut perspiciatis, unde omnis iste natus <span>75 %</span></div>
+						<div class="slidecontainer">
+							<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+						</div>
 					</div>
 					<div class="order__form-col">
-						<button type="button" class="btn">Прикрепить файл</button>
+						<button type="button" class="btn order__form-btn">
+							<img src="./images/icons/pin-icon.svg" alt="pin icon">
+							Прикрепить файл
+						</button>
 					</div>
 					<div class="order__form-col col-3">
-						<button type="button" class="btn primary">Отправить</button>
+						<button type="button" class="btn primary order__form-send">Отправить</button>
 					</div>
 				</form>
 			</div>
@@ -131,6 +193,6 @@
 			</div>
 		</footer>
 
-		<script src="js/main.js"></script>
+		<script src="js/main.min.js"></script>
 	</body>
 </html>
