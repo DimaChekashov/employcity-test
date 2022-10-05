@@ -28,7 +28,14 @@ function range() {
     };
 }
 
+function burger() {
+    document.querySelector(".header__btn").addEventListener("click", function () {
+        this.classList.toggle("close");
+    });
+}
+
 window.addEventListener("load", () => {
     select();
     range();
+    burger();
 });
