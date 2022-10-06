@@ -29,8 +29,12 @@ function range() {
 }
 
 function burger() {
-    document.querySelector(".header__btn").addEventListener("click", function () {
+    const btn = document.querySelector(".header__btn");
+    const nav = document.querySelector(".nav");
+
+    btn.addEventListener("click", function () {
         this.classList.toggle("close");
+        nav.classList.toggle("active");
     });
 }
 
