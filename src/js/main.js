@@ -18,8 +18,8 @@ function select() {
 }
 
 function range() {
-    var slider = document.getElementById("myRange");
-    var output = document.querySelector(".range-text__value");
+    const slider = document.getElementById("myRange");
+    const output = document.querySelector(".range-text__value");
 
     output.innerHTML = slider.value + "%";
 

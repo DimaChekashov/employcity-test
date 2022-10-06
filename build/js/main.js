@@ -18,8 +18,8 @@ function select() {
 }
 
 function range() {
-    var slider = document.getElementById("myRange");
-    var output = document.querySelector(".range-text__value");
+    const slider = document.getElementById("myRange");
+    const output = document.querySelector(".range-text__value");
 
     output.innerHTML = slider.value + "%";
 
@@ -28,7 +28,18 @@ function range() {
     };
 }
 
+function burger() {
+    const btn = document.querySelector(".header__btn");
+    const nav = document.querySelector(".nav");
+
+    btn.addEventListener("click", function () {
+        this.classList.toggle("close");
+        nav.classList.toggle("active");
+    });
+}
+
 window.addEventListener("load", () => {
     select();
     range();
+    burger();
 });

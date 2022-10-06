@@ -157,10 +157,11 @@
 						<input type="range" min="1" max="100" value="75" class="slider" id="myRange">
 					</div>
 					<div class="order__form-col">
-						<button type="button" class="btn order__form-btn">
+						<label class="btn order__form-btn" for="upload-file">
 							<img src="./images/icons/pin-icon.svg" alt="pin icon">
 							Прикрепить файл
-						</button>
+						</label>
+						<input type="file" name="file" id="upload-file" class="order__form-file" />
 					</div>
 					<div class="order__form-col col-3">
 						<button type="button" class="btn primary order__form-send">Отправить</button>

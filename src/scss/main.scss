@@ -266,6 +266,9 @@ body {
                 margin-right: 10px;
             }
         }
+        &-file {
+            display: none;
+        }
         &-send {
             font-weight: 600;
             font-size: 15px;
@@ -315,6 +318,7 @@ body {
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            text-decoration: none;
             span {
                 color: #FFFFFF;
                 font-weight: 400;
