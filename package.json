@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "planner5d-test website",
   "main": "index.js",
+  "homepage": "https://dimachekashov.github.io/employcity-test",
   "scripts": {
     "start": "gulp watch",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn build"
   },
   "author": {
     "name": "Dmitry Chekashov",
@@ -32,6 +35,7 @@
     "sass": "^1.47.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "normalize.css": "^8.0.1"
   }
 }
